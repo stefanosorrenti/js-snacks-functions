@@ -14,7 +14,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui. 
-function getFirstChar(array) { 
+function getFirstChar(array) {
 
     const firstChar = [] //creo una varaibile d'appoggio per inserire il mio nuovo array
 
@@ -29,11 +29,30 @@ function getFirstChar(array) {
 
 }
 
+/* //ARROW FUCNTION
 
+const getFirstChar = (array) => {
+
+    const firstChar = [] //creo una varaibile d'appoggio per inserire il mio nuovo array
+
+    for (i = 0; i < array.length; i++) { //ciclo ogni elemento per tutta la lunghezza dell'array inserito
+
+        const char = array[i] //salvo in una variabile ogni elemento ciclato dell'aaray isnerito.
+        firstChar.push(char[0]) //pusho nella variabile d'appoggio ogni primo carattere di ogni primo elemento ciclato dell'array inserito
+
+    }
+
+    return firstChar //la funzione restituisce l'array pushato
+
+
+
+} */
 
 // Invoca la funzione qui e stampa il risultato in console
 const firstCharNames = getFirstChar(names) //salvo la funzione invocato con l'argomento in nuova variabile per differenziarmi dall'esercizio prima.
 console.log(firstCharNames); //stampo la mia variabile che conterrà la funzione a cui è stata associato return fistChar
+
+
 
 
 
