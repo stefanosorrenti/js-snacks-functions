@@ -12,26 +12,51 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
  * @param {string} character - Enter the letter with which the names will be searched and printed
  * @returns {array} - Returns an array with a list of names starting with the desired letter
  */
-function getNameByA(array, character) { 
+function getNameByChar(array, character) {
 
-    const onlyANames = [] //creo una varaibile d'appoggio per inserire il mio nuovo array
+    const onlyCharNames = [] //creo una varaibile d'appoggio per inserire il mio nuovo array
 
-    for (i = 0; i <array.length; i++) { //ciclo ogni elemento per tutta la lunghezza dell'array inserito
-        const element =array[i] //salvo in una variabile ogni elemento ciclato dell'aaray inserito.
+    for (i = 0; i < array.length; i++) { //ciclo ogni elemento per tutta la lunghezza dell'array inserito
+        const element = array[i] //salvo in una variabile ogni elemento ciclato dell'aaray inserito.
         const firstChar = element[0] //salvo il una variabile il primo carattare di ogni elemento ciclato nell'array inserito
 
         if (firstChar == character) { //SE il carattere corrisponde alla lettere inserita dall'utente
-            onlyANames.push(element); //pusho l'elemento nella variabile d'appoggio
+            onlyCharNames.push(element); //pusho l'elemento nella variabile d'appoggio
         }
 
-    
+
     }
-    return onlyANames //restituisco il valore della variabile d'appoggio come valore della funzione
+    return onlyCharNames //restituisco il valore della variabile d'appoggio come valore della funzione
 
 }
 
+
+
+
+//ARROW FUCNTION
+
+/* const getNameByChar = (array, character) => {
+
+    const onlyCharNames = [] //creo una varaibile d'appoggio per inserire il mio nuovo array
+
+    for (i = 0; i < array.length; i++) { //ciclo ogni elemento per tutta la lunghezza dell'array inserito
+        const element = array[i] //salvo in una variabile ogni elemento ciclato dell'aaray inserito.
+        const firstChar = element[0] //salvo il una variabile il primo carattare di ogni elemento ciclato nell'array inserito
+
+        if (firstChar == character) { //SE il carattere corrisponde alla lettere inserita dall'utente
+            onlyCharNames.push(element); //pusho l'elemento nella variabile d'appoggio
+        }
+
+
+    }
+    return onlyCharNames //restituisco il valore della variabile d'appoggio come valore della funzione
+
+
+
+}
+ */
 // Invoca la funzione qui e stampa il risultato in console
-console.log(getNameByA(names, 'A')); 
+console.log(getNameByChar(names, 'A'));
 
 
 
