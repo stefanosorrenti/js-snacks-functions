@@ -22,10 +22,10 @@ function getNameByA(array, character) {
 
         if (firstChar == character) { //SE il carattere corrisponde alla lettere inserita dall'utente
             onlyANames.push(element); //pusho l'elemento nella variabile d'appoggio
-    }
+        }
 
     
-}
+    }
     return onlyANames //restituisco il valore della variabile d'appoggio come valore della funzione
 
 }
