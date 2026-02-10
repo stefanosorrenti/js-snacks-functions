@@ -9,7 +9,7 @@ const userName = prompt('Inserisci il tuo nome per essere salutato!');
 
 // Dichiara la funzione qui.
 /**
- * ##Say hello!
+ * ##Say 'hello!'
  * This feature greets the user using his name
  * @param {string} promptName - the prompt that allows you to write the name must be inserted 
  * @returns {string} - returns the user's name + 'Hello'
