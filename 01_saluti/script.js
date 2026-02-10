@@ -23,13 +23,19 @@ function getHello(promptName) { // si inserisce il nome dell'utente
     return hello //la funzione resitutisce la costante
 
 }
+ 
 
-
-
-
+/*ARROW FUNCTION
+const getHello = (promptName) => {
+    const hello = `Ciao ${promptName}!`
+    return hello
+}*/
 // Invoca la funzione qui e stampa il risultato in console
+
 console.log(getHello(userName));
 
+//ARROW
+//console.log(getHello(userName));
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
