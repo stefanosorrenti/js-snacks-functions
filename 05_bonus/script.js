@@ -31,39 +31,38 @@ const  currentHours= new Date().getHours()
 
 // Dichiara la funzione qui.
 /**
- * ##Say 'hello!'
- * This feature greets the user using his name
+ * ##Say good morning, good evening, or good afternoon.
+ * This feature greets you and wishes you a good day based on the current time. 
  * @param {string} promptName - the prompt that allows you to write the name must be inserted 
- * @returns {string} - returns the user's name + 'Hello'
+ * @returns {string} - returns the user's name + 'hello' + good morning/good afternoon/good evening 
  */
 
 //La funzione deve salutare l'utente
 function getHello(promptName) { // si inserisce il nome dell'utente
 
-    const  currentHours= new Date().getHours()
+    const  currentHours= new Date().getHours() //inserisco ua constante che mi resituisce  l'ora corrente (solo ora)
     
-    let hello; //la costante unisce 'ciao' è il nome dell'utente `Ciao ${promptName}!`
-    
-    if (currentHours < 13 && currentHours >= 5) {
+    let hello; //creo la variabile d'appoggio
+    if (currentHours < 13 && currentHours >= 5) { //SE la costante con l'orario è minore di 13 E maggiore/uguale di 5
         
-        hello = `Ciao ${promptName}, buongiorno!`
+        hello = `Ciao ${promptName}, buongiorno!` //hello restituisce Ciao + nome dell'utente + buongiorno
         
-    } else if (currentHours >= 13 && currentHours <= 17) {
-        hello = `Ciao ${promptName}, buon pomeriggio!`
-    } else {
+    } else if (currentHours >= 13 && currentHours <= 17) {//ALTRIEMNTI SE la costante con l'orario è maggiore/uguale di 13 E minore/uguale di 17
+        hello = `Ciao ${promptName}, buon pomeriggio!` //hello restituisce Ciao + nome dell'utente + buon pomeriggio!
+    } else { //ALTRIMENTI
         
-        hello = `Ciao ${promptName}, buonasera!`
+        hello = `Ciao ${promptName}, buonasera!`//hello restituisce Ciao + nome dell'utente + buonsare!
     }
     
    
-    return hello
+    return hello //la funzione assume il valore della variabile hello
 }
 
 
-console.log(getHello(userName));
-
 
 // Invoca la funzione qui e stampa il risultato in console
+
+console.log(getHello(userName));
 
 
 
